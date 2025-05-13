@@ -6,19 +6,17 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  const [isDarkMode, setIsDarkMode] = useState(true); // Default to dark mode
+  const [isDarkMode, setIsDarkMode] = useState(false); // Default to light mode
 
   // Handle scroll events
   useEffect(() => {
     const handleScroll = () => {
-      // Change navbar style on scroll
       if (window.scrollY > 70) {
         setScrolled(true);
       } else {
         setScrolled(false);
       }
 
-      // Determine active section
       const sections = document.querySelectorAll("section[id]");
       const scrollPosition = window.scrollY + 100;
 
@@ -43,24 +41,20 @@ function Navbar() {
   // Toggle light/dark mode
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle("dark-mode", isDarkMode);
+    document.body.classList.toggle("dark-mode", !isDarkMode);
   };
 
   // Toggle mobile menu
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   // Close mobile menu when a link is clicked
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="container navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <span className="logo-text">Your Name</span>
+          <span className="logo-text">Duong Hoang Vu Lam</span>
         </Link>
 
         <div
@@ -128,14 +122,12 @@ function Navbar() {
           </li>
         </ul>
 
-        {/* Light/Dark Mode Toggle */}
-        <button
-          className="theme-toggle"
-          onClick={toggleTheme}
-          aria-label="Toggle Theme"
-        >
-          {isDarkMode ? "🌙" : "☀️"}
-        </button>
+        {/* Sliding Toggle Button */}
+        <div className="theme-toggle-container" onClick={toggleTheme}>
+          <div className={`theme-toggle ${isDarkMode ? "dark" : "light"}`}>
+            <div className="toggle-circle"></div>
+          </div>
+        </div>
       </div>
     </nav>
   );

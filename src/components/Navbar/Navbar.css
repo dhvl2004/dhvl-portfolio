@@ -149,18 +149,46 @@
   transform: translateY(-8.5px) rotate(-45deg);
 }
 
-/* Theme Toggle */
-.theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
+/* Theme Toggle Container */
+.theme-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  color: var(--light-color);
-  transition: color var(--transition-normal);
 }
 
-.theme-toggle:hover {
-  color: var(--accent-color);
+/* Theme Toggle */
+.theme-toggle {
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: var(--secondary-dark); /* Light mode background */
+  border: var(--border-width-normal) solid var(--text-color);
+  position: relative;
+  transition: background-color var(--transition-normal);
+}
+
+.theme-toggle.dark {
+  background-color: var(--secondary-light); /* Dark mode background */
+}
+
+/* Toggle Circle */
+.toggle-circle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent-color); /* White circle */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Default position for light mode */
+  transform: translateY(-50%);
+  transition: left var(--transition-normal),
+    background-color var(--transition-normal);
+}
+
+.theme-toggle.dark .toggle-circle {
+  left: 55%; /* Position for dark mode */
+  background-color: var(--accent-color); /* Dark circle for contrast */
 }
 
 /* Responsive Styles */
