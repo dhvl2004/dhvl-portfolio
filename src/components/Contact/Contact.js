@@ -129,7 +129,7 @@ function Contact() {
                 ></textarea>
               </div>
 
-              <button type="submit" className="submit-btn">
+              <button type="submit" className="btn btn-primary submit-btn">
                 Send Message
               </button>
             </form>

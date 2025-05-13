@@ -102,18 +102,14 @@
 
 .about-social-link {
   padding: var(--spacing-xs) var(--spacing-sm);
-  background-color: var(--light-alt-color);
-  color: var(--primary-color);
-  border-radius: var(--border-radius-md);
+  color: var(--text-light);
   text-decoration: none;
+  transition: color var(--transition-normal), transform var(--transition-normal);
   font-size: var(--font-size-sm);
   font-weight: var(--fw-medium);
-  transition: all var(--transition-normal);
 }
 
 .about-social-link:hover {
-  background-color: var(--primary-color);
-  color: var(--light-color);
   transform: translateY(-3px);
 }
 
@@ -263,19 +259,12 @@
 }
 
 .interest-item {
-  background-color: var(--light-alt-color);
-  color: var(--primary-color);
+  color: var(--text-color);
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--border-radius-full);
   font-size: var(--font-size-sm);
   font-weight: var(--fw-medium);
   transition: all var(--transition-normal);
-}
-
-.interest-item:hover {
-  background-color: var(--primary-color);
-  color: var(--light-color);
-  transform: translateY(-3px);
 }
 
 /* CTA Button */

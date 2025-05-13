@@ -45,15 +45,15 @@
   align-items: center;
   justify-content: center;
   padding: var(--spacing-xs) var(--spacing-sm);
-  background-color: var(--dark-alt-color);
-  color: var(--light-color);
-  border-radius: var(--border-radius-md);
-  transition: background-color var(--transition-normal), transform var(--transition-normal);
+
+  color: var(--text-light);
   text-decoration: none;
+  transition: color var(--transition-normal), transform var(--transition-normal);
+  font-size: var(--font-size-md);
 }
 
 .social-link:hover {
-  background-color: var(--primary-color);
+  color: var(--accent-color);
   transform: translateY(-3px);
 }
 
@@ -80,7 +80,7 @@
 }
 
 .footer-heading::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -133,7 +133,8 @@
   gap: var(--spacing-sm);
 }
 
-.copyright, .credits {
+.copyright,
+.credits {
   font-size: var(--font-size-sm);
   color: var(--text-light);
 }
@@ -145,10 +146,19 @@
 }
 
 @keyframes heartBeat {
-  0%, 100% { transform: scale(1); }
-  15% { transform: scale(1.2); }
-  30% { transform: scale(1); }
-  45% { transform: scale(1.1); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.2);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.1);
+  }
 }
 
 /* Responsive adjustments */
@@ -156,7 +166,7 @@
   .footer-content {
     flex-direction: column;
   }
-  
+
   .footer-logo-section {
     margin-bottom: var(--spacing-md);
   }
@@ -167,18 +177,19 @@
     flex-direction: column;
     gap: var(--spacing-lg);
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .footer-heading::after {
     left: 50%;
     transform: translateX(-50%);
   }
-  
-  .footer-links, .footer-contact {
+
+  .footer-links,
+  .footer-contact {
     text-align: center;
   }
 }
@@ -187,16 +198,14 @@
   .footer {
     padding: var(--spacing-lg) 0 var(--spacing-sm);
   }
-  
+
   .footer-social {
     justify-content: center;
   }
-  
+
   .contact-list li {
     flex-direction: column;
     gap: var(--spacing-xs);
     text-align: center;
   }
 }
-
-

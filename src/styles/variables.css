@@ -1,116 +1,140 @@
 :root {
-  /* Color System */
-  /* Main colors */
-  --primary-color: #2563eb;       /* Primary blue */
+  /* ===========================
+     Color System (Light Mode)
+  ============================ */
+
+  /* Main Colors */
+  --primary-color: #2563eb; /* Primary blue */
   --primary-light: #3b82f6;
   --primary-dark: #1d4ed8;
-  
-  --secondary-color: #0f172a;     /* Dark navy */
-  --secondary-light: #1e293b;
-  --secondary-dark: #0a0f1c;
-  
-  --accent-color: #06b6d4;        /* Cyan accent */
+
+  --secondary-color: #f8fafc; /* Light background */
+  --secondary-light: #ffffff; /* White */
+  --secondary-dark: #e5e7eb; /* Light gray */
+
+  --accent-color: #06b6d4; /* Cyan accent */
   --accent-light: #22d3ee;
   --accent-dark: #0891b2;
-  
-  /* Light shades */
-  --light-color: #f8fafc;         /* Almost white */
-  --light-alt-color: #f1f5f9;     /* Light gray for alternate backgrounds */
-  --light-accent-color: #e0f2fe;  /* Very light blue */
-  
-  /* Dark shades */
-  --dark-color: #0f172a;          /* Dark navy/black */
-  --dark-alt-color: #1e293b;      /* Slightly lighter dark */
-  
-  /* Text colors */
-  --text-color: #64748b;          /* Medium gray for regular text */
-  --text-light: #94a3b8;          /* Lighter gray for secondary text */
-  --text-dark: #334155;           /* Darker gray for headings */
-  
-  /* Status colors */
-  --success-color: #10b981;
-  --warning-color: #f59e0b;
-  --error-color: #ef4444;
-  --info-color: #3b82f6;
-  
-  /* Typography */
-  /* Font families */
-  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-secondary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-mono: 'Fira Code', 'SF Mono', 'Roboto Mono', Menlo, Consolas, monospace;
-  
-  /* Font weights */
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semibold: 600;
-  --fw-bold: 700;
-  
-  /* Font sizes */
-  --font-size-xs: 0.75rem;    /* 12px */
-  --font-size-sm: 0.875rem;   /* 14px */
-  --font-size-md: 1rem;       /* 16px */
-  --font-size-lg: 1.125rem;   /* 18px */
-  --font-size-xl: 1.25rem;    /* 20px */
-  --font-size-2xl: 1.5rem;    /* 24px */
-  --font-size-3xl: 2rem;      /* 32px */
-  --font-size-4xl: 2.5rem;    /* 40px */
-  --font-size-5xl: 3rem;      /* 48px */
-  --font-size-6xl: 3.75rem;   /* 60px */
-  
-  /* Line heights */
-  --line-height-tight: 1.2;
-  --line-height-snug: 1.375;
-  --line-height-normal: 1.6;
-  --line-height-relaxed: 1.75;
-  --line-height-loose: 2;
-  
-  /* Letter spacing */
-  --letter-spacing-tight: -0.025em;
-  --letter-spacing-normal: 0;
-  --letter-spacing-wide: 0.025em;
-  --letter-spacing-wider: 0.05em;
-  --letter-spacing-widest: 0.1em;
-  
-  /* Spacing */
-  --spacing-xs: 0.25rem;  /* 4px */
-  --spacing-sm: 0.5rem;   /* 8px */
-  --spacing-md: 1rem;     /* 16px */
-  --spacing-lg: 2rem;     /* 32px */
-  --spacing-xl: 4rem;     /* 64px */
-  --spacing-2xl: 6rem;    /* 96px */
-  --spacing-3xl: 8rem;    /* 128px */
-  
-  /* Grid */
-  --container-width: 1200px;
-  --container-padding: var(--spacing-md);
-  
-  /* Border Radius */
-  --border-radius-sm: 0.25rem;    /* 4px */
-  --border-radius-md: 0.5rem;     /* 8px */
-  --border-radius-lg: 1rem;       /* 16px */
-  --border-radius-xl: 2rem;       /* 32px */
-  --border-radius-full: 9999px;   /* For fully rounded elements */
-  
-  /* Borders */
-  --border-width-thin: 1px;
-  --border-width-normal: 2px;
-  --border-width-thick: 4px;
-  
-  /* Box Shadows */
+
+  /* Text Colors */
+  --text-color: #334155; /* Dark gray for text */
+  --text-light: #64748b; /* Medium gray for secondary text */
+  --text-dark: #1e293b; /* Darker gray for headings */
+
+  /*Shadow Colors */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
   --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
-  
-  /* Transitions */
+
+  /* Button Colors */
+  --navbar-bg-color: var(--secondary-light);
+  --btn-bg-color: var(--primary-color);
+  --btn-text-color: var(--secondary-light);
+  --btn-hover-bg-color: var(--primary-dark);
+  --btn-hover-text-color: var(--secondary-dark);
+  --btn-outline-border-color: var(--primary-color);
+  --btn-outline-text-color: var(--primary-color);
+  --btn-outline-hover-bg-color: var(--primary-color);
+  --btn-outline-hover-text-color: var(--secondary-dark);
+
+  /* Background Colors */
+  --bg-color: var(--secondary-color);
+  --card-bg-color: var(--secondary-dark);
+
+  /* ===========================
+     Typography
+  ============================ */
+
+  /* Font Families */
+  --font-primary: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-secondary: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Fira Code", "SF Mono", "Roboto Mono", Menlo, Consolas, monospace;
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 2rem; /* 32px */
+  --font-size-4xl: 2.5rem; /* 40px */
+  --font-size-5xl: 3rem; /* 48px */
+  --font-size-6xl: 3.75rem; /* 60px */
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.75;
+  --line-height-loose: 2;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* ===========================
+     Spacing
+  ============================ */
+
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 2rem; /* 32px */
+  --spacing-xl: 4rem; /* 64px */
+  --spacing-2xl: 6rem; /* 96px */
+  --spacing-3xl: 8rem; /* 128px */
+
+  /* ===========================
+     Grid
+  ============================ */
+
+  --container-width: 1200px;
+  --container-padding: var(--spacing-md);
+
+  /* ===========================
+     Borders
+  ============================ */
+
+  /* Border Radius */
+  --border-radius-sm: 0.25rem; /* 4px */
+  --border-radius-md: 0.5rem; /* 8px */
+  --border-radius-lg: 1rem; /* 16px */
+  --border-radius-xl: 2rem; /* 32px */
+  --border-radius-full: 9999px; /* Fully rounded elements */
+
+  /* Border Widths */
+  --border-width-thin: 1px;
+  --border-width-normal: 2px;
+  --border-width-thick: 4px;
+
+  /* ===========================
+     Transitions
+  ============================ */
+
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
   --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  
-  /* Z-index */
+
+  /* ===========================
+     Z-Index
+  ============================ */
+
   --z-negative: -1;
   --z-0: 0;
   --z-10: 10;
@@ -126,10 +150,12 @@
   --z-popover: 600;
   --z-tooltip: 700;
   --z-toast: 800;
-  
-  /* Animation */
+
+  /* ===========================
+     Animation
+  ============================ */
+
   --animation-duration-short: 150ms;
   --animation-duration-medium: 300ms;
   --animation-duration-long: 500ms;
 }
-

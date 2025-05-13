@@ -41,7 +41,7 @@ function Projects() {
         <h2 className="section-title">My Projects</h2>
         <div className="projects-grid">
           {projects.map((project) => (
-            <div className="project-card" key={project.id}>
+            <div className="card project-card" key={project.id}>
               <div className="project-image">
                 <div className="placeholder-image">Project Image</div>
               </div>
