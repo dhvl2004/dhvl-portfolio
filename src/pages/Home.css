@@ -1,0 +1,140 @@
+/* Main layout styles for Home page */
+.home-page {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Section alternating background colors */
+.home-page section:nth-child(odd) {
+  background-color: var(--light-color);
+}
+
+.home-page section:nth-child(even) {
+  background-color: var(--light-alt-color);
+}
+
+/* Section spacing and container width handled in global.css */
+
+/* Section transition animations */
+.home-page section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-normal), transform var(--transition-normal);
+}
+
+.home-page section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: var(--spacing-lg);
+  right: var(--spacing-lg);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: 
+    opacity var(--transition-normal),
+    visibility var(--transition-normal),
+    transform var(--transition-normal),
+    background-color var(--transition-normal);
+  z-index: var(--z-fixed);
+  box-shadow: var(--shadow-md);
+}
+
+.back-to-top:hover, 
+.back-to-top:focus {
+  background-color: var(--accent-color);
+  outline: none;
+}
+
+.back-to-top:active {
+  transform: translateY(2px);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Button animation */
+.back-to-top::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: transform var(--transition-normal);
+}
+
+.back-to-top:hover::after {
+  transform: scale(1);
+}
+
+/* Page entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-md);
+    bottom: var(--spacing-sm);
+    right: var(--spacing-sm);
+  }
+}
+
+

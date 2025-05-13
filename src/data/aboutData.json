@@ -1,0 +1,44 @@
+{
+  "profile": {
+    "name": "DHVL",
+    "socialLinks": [
+      { "platform": "GitHub", "url": "https://github.com/dhvl2004" },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/duong-hoang-vu-lam/"
+      }
+    ]
+  },
+  "summary": "I am currently pursuing a Bachelor of Computing in Data Science and Artificial Intelligence at Nanyang Technological University, Singapore. I have a strong foundation in data analysis, machine learning, and software development. I am eager to apply my skills in real-world projects and contribute to innovative solutions.",
+  "experience": [
+    {
+      "title": "Data Intern",
+      "company": "Handshakes by DC Frontiers, Singapore",
+      "date": "May 2025 - Present",
+      "description": "..."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Computing in Data Science and Artificial Intelligence",
+      "institution": "Nanyang Technological University, Singapore",
+      "date": "August 2023 - Present",
+      "description": "..."
+    },
+    {
+      "degree": "Semester Exchange Program",
+      "institution": "University of Bologna, Italy",
+      "date": "September 2025 - February 2026",
+      "description": "..."
+    }
+  ],
+  "achievements": [
+    "Led a team of 5 developers to deliver a high-traffic e-commerce platform.",
+    "Reduced page load time by 60% through optimization techniques.",
+    "Implemented CI/CD pipeline that decreased deployment time by 70%.",
+    "Received 'Developer of the Year' award at Tech Solutions Inc."
+  ],
+  "interests": ["Working Out", "Hiking", "Reading", "Travel", "Open Source"],
+  "resumeLink": "/downloads/DuongHoangVuLam_Resume.pdf",
+  "profilePhotoLink": "/images/profile.jpg"
+}
