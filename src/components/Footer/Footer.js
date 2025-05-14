@@ -1,47 +1,30 @@
 import React from "react";
 import "./Footer.css";
+import personalData from "../../data/personalData.json";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
+  const { profile, contact, footer } = personalData;
 
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo-section">
-            <h3 className="footer-logo">Your Name</h3>
-            <p className="footer-description">
-              A passionate web developer focused on creating modern, responsive,
-              and user-friendly websites.
-            </p>
+            <h3 className="footer-logo">{profile.name}</h3>
+            <p className="footer-description">{footer.summary}</p>
             <div className="footer-social">
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-                aria-label="GitHub"
-              >
-                <span className="social-icon">GitHub</span>
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-                aria-label="LinkedIn"
-              >
-                <span className="social-icon">LinkedIn</span>
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-                aria-label="Twitter"
-              >
-                <span className="social-icon">Twitter</span>
-              </a>
+              {contact.socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  {link.platform}
+                </a>
+              ))}
             </div>
           </div>
 
@@ -69,15 +52,15 @@ function Footer() {
               <ul className="contact-list">
                 <li>
                   <span className="contact-icon">📧</span>
-                  <span>your.email@example.com</span>
+                  <span>{contact.email}</span>
                 </li>
                 <li>
                   <span className="contact-icon">📱</span>
-                  <span>+123 456 7890</span>
+                  <span>{contact.phone}</span>
                 </li>
                 <li>
                   <span className="contact-icon">📍</span>
-                  <span>City, Country</span>
+                  <span>{contact.location}</span>
                 </li>
               </ul>
             </div>
@@ -86,7 +69,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <p className="copyright">
-            &copy; {currentYear} Your Name. All rights reserved.
+            &copy; {currentYear} {profile.name}. All rights reserved.
           </p>
           <p className="credits">
             Designed & Built with <span className="heart">❤️</span>

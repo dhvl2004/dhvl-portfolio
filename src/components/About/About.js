@@ -4,7 +4,6 @@ import personalData from "../../data/personalData.json";
 
 const About = () => {
   const {
-    profile,
     summary,
     experience,
     education,
@@ -19,34 +18,6 @@ const About = () => {
         <h2 className="section-title">About Me</h2>
 
         <div className="about-content">
-          {/* Profile Image */}
-          <div className="about-image">
-            <div className="about-image-container">
-              <div className="about-image-border"></div>
-              <div className="about-image-placeholder">
-                <img
-                  src={process.env.PUBLIC_URL + profile.profilePhotoLink}
-                  alt={profile.name}
-                  className="about-image-img"
-                />
-              </div>
-            </div>
-
-            <div className="about-social">
-              {profile.socialLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="about-social-link"
-                >
-                  {link.platform}
-                </a>
-              ))}
-            </div>
-          </div>
-
           {/* Profile Information */}
           <div className="about-info">
             {/* Professional Summary */}
@@ -119,7 +90,7 @@ const About = () => {
                 download="DuongHoangVuLam_Resume.pdf"
                 className="btn btn-primary"
               >
-                Download CV
+                Download My Resume
               </a>
             </div>
           </div>

@@ -19,7 +19,7 @@
   flex: 1;
   min-width: 300px;
   max-width: 450px;
-  background-color: var(--light-color);
+  background-color: var(--card-bg-color);
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -34,7 +34,7 @@
 }
 
 .category-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -79,7 +79,11 @@
 
 .skill-progress {
   height: 100%;
-  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--accent-color)
+  );
   border-radius: 5px;
   transition: width 1s ease-in-out;
 }
@@ -89,9 +93,8 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .skill-category {
     width: 100%;
   }
 }
-

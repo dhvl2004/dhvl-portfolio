@@ -1,9 +1,9 @@
 import React from "react";
 import "./Projects.css";
-import projectsData from "../../data/projectsData.json";
+import personalData from "../../data/personalData.json";
 
 const Projects = () => {
-  const { projects } = projectsData;
+  const { projects } = personalData;
 
   return (
     <section id="projects" className="projects-section">
@@ -11,9 +11,9 @@ const Projects = () => {
         <h2 className="section-title">My Projects</h2>
         <div className="projects-grid">
           {projects.map((project) => (
-            <div className="card project-card" key={project.id}>
+            <div className="card project-card">
               <div className="project-image">
-                <div className="placeholder-image">Project Image</div>
+                <div className="placeholder-image">{project.title}</div>
               </div>
               <div className="project-info">
                 <h3 className="project-title">{project.title}</h3>

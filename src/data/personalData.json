@@ -1,7 +1,12 @@
 {
   "profile": {
     "name": "Duong Hoang Vu Lam",
-    "profilePhotoLink": "/images/profile.JPG",
+    "profilePhotoLink": "/images/profile.JPG"
+  },
+  "contact": {
+    "email": "lam.duonghoangvu.work@gmail.com",
+    "phone": "+65 ...",
+    "location": "Hanoi, Vietnam",
     "socialLinks": [
       { "platform": "GitHub", "url": "https://github.com/dhvl2004" },
       {
@@ -12,10 +17,10 @@
   },
   "hero": {
     "title": "Data Engineer & Analyst",
-    "description": "I build responsive, user-friendly websites and applications with modern technologies and clean, efficient code.",
+    "description": "I build scalable, high-performance data pipelines and systems that empower businesses to make data-driven decisions.",
     "profileInitials": "DHVL"
   },
-  "summary": "I am currently pursuing a Bachelor of Computing in Data Science and Artificial Intelligence at Nanyang Technological University, Singapore. I have a strong foundation in data analysis, machine learning, and software development. I am eager to apply my skills in real-world projects and contribute to innovative solutions.",
+  "summary": "I am a Data Science and Analytics enthusiast with a strong background in machine learning and data analytics. Passionate about solving complex problems through data-driven solutions, I have experience in predictions models. Let’s connect and discuss how we can collaborate!",
   "experience": [
     {
       "title": "Data Intern",
@@ -39,29 +44,55 @@
     }
   ],
   "achievements": [
-    "Led a team of 5 developers to deliver a high-traffic e-commerce platform.",
-    "Reduced page load time by 60% through optimization techniques.",
-    "Implemented CI/CD pipeline that decreased deployment time by 70%.",
-    "Received 'Developer of the Year' award at Tech Solutions Inc."
+    "Designed an online courses recommendation system based on user’s information, providing up to 90% of skills requirements for an internship.",
+    "...",
+    "..."
+  ],
+  "interests": ["Working Out", "Reading", "Travel", "Gaming", "Anime"],
+  "resumeLink": "/downloads/DuongHoangVuLam_Resume.pdf",
+  "projects": [
+    {
+      "title": "Project 1",
+      "description": "Description of project 1.",
+      "image": "/images/project1.jpg",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "github": "https://github.com/dhvl2004",
+      "live": "https://github.com/dhvl2004"
+    },
+    {
+      "title": "Project 2",
+      "description": "Description of project 2.",
+      "image": "/images/project2.jpg",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/dhvl2004",
+      "live": "https://github.com/dhvl2004"
+    },
+    {
+      "title": "Project 3",
+      "description": "Description of project 3.",
+      "image": "/images/project3.jpg",
+      "technologies": ["Python", "Django"],
+      "github": "https://github.com/dhvl2004",
+      "live": "https://github.com/dhvl2004"
+    }
   ],
   "skillCategories": [
     {
-      "category": "Frontend",
+      "category": "Data Science",
       "skills": [
-        { "name": "HTML", "level": 90 },
-        { "name": "CSS", "level": 85 },
-        { "name": "JavaScript", "level": 80 },
-        { "name": "React", "level": 85 },
-        { "name": "TypeScript", "level": 70 }
+        { "name": "Python", "level": 90 },
+        { "name": "R", "level": 75 },
+        { "name": "Machine Learning", "level": 70 },
+        { "name": "Data Analysis", "level": 80 }
       ]
     },
     {
-      "category": "Backend",
+      "category": "Data Engineering",
       "skills": [
-        { "name": "Node.js", "level": 75 },
-        { "name": "Express", "level": 70 },
-        { "name": "MongoDB", "level": 65 },
-        { "name": "SQL", "level": 60 }
+        { "name": "SQL", "level": 75 },
+        { "name": "ETL", "level": 70 },
+        { "name": "Data Warehousing", "level": 65 },
+        { "name": "Big Data", "level": 60 }
       ]
     },
     {
@@ -74,28 +105,8 @@
       ]
     }
   ],
-  "interests": ["Working Out", "Hiking", "Reading", "Travel", "Open Source"],
-  "resumeLink": "/downloads/DuongHoangVuLam_Resume.pdf",
   "footer": {
     "copyright": "© 2025 Duong Hoang Vu Lam",
-    "socialLinks": [
-      { "platform": "GitHub", "url": "https://github.com/dhvl2004" },
-      {
-        "platform": "LinkedIn",
-        "url": "https://www.linkedin.com/in/duong-hoang-vu-lam/"
-      }
-    ]
-  },
-  "contact": {
-    "email": "lam.duonghoangvu.work@gmail.com",
-    "phone": "+65 ...",
-    "location": "Hanoi, Vietnam",
-    "socialLinks": [
-      { "platform": "GitHub", "url": "https://github.com/dhvl2004" },
-      {
-        "platform": "LinkedIn",
-        "url": "https://www.linkedin.com/in/duong-hoang-vu-lam/"
-      }
-    ]
+    "summary": "A Data Science and Analytics enthusiast with a strong background in machine learning and data analytics."
   }
 }

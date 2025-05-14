@@ -16,8 +16,9 @@ const Hero = () => {
 
     setGreeting(getGreeting());
   }, []);
-  const { name, socialLinks } = personalData.profile;
-  const { title, description, profileInitials } = personalData.hero;
+  const { name, profilePhotoLink } = personalData.profile;
+  const { socialLinks } = personalData.contact;
+  const { title, description } = personalData.hero;
 
   return (
     <section id="home" className="hero-section">
@@ -63,7 +64,11 @@ const Hero = () => {
           <div className="hero-image">
             <div className="profile-image-container">
               <div className="profile-image-placeholder">
-                <span className="profile-initials">{profileInitials}</span>
+                <img
+                  src={process.env.PUBLIC_URL + profilePhotoLink}
+                  alt={name}
+                  className="profile-image-img"
+                />
               </div>
             </div>
           </div>
