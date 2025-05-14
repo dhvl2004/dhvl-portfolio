@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dhvl2004-portfolio/static/css/main.3e1b1f5e.css",
+    "main.js": "/dhvl2004-portfolio/static/js/main.e301f4ef.js",
+    "static/js/453.1407b060.chunk.js": "/dhvl2004-portfolio/static/js/453.1407b060.chunk.js",
+    "index.html": "/dhvl2004-portfolio/index.html",
+    "main.3e1b1f5e.css.map": "/dhvl2004-portfolio/static/css/main.3e1b1f5e.css.map",
+    "main.e301f4ef.js.map": "/dhvl2004-portfolio/static/js/main.e301f4ef.js.map",
+    "453.1407b060.chunk.js.map": "/dhvl2004-portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e1b1f5e.css",
+    "static/js/main.e301f4ef.js"
+  ]
+}
