@@ -1,37 +1,9 @@
-import React from 'react';
-import './Skills.css';
+import React from "react";
+import "./Skills.css";
+import personalData from "../../data/personalData.json";
 
-function Skills() {
-  const skillCategories = [
-    {
-      category: "Frontend",
-      skills: [
-        { name: "HTML", level: 90 },
-        { name: "CSS", level: 85 },
-        { name: "JavaScript", level: 80 },
-        { name: "React", level: 85 },
-        { name: "TypeScript", level: 70 }
-      ]
-    },
-    {
-      category: "Backend",
-      skills: [
-        { name: "Node.js", level: 75 },
-        { name: "Express", level: 70 },
-        { name: "MongoDB", level: 65 },
-        { name: "SQL", level: 60 }
-      ]
-    },
-    {
-      category: "Tools & Others",
-      skills: [
-        { name: "Git", level: 80 },
-        { name: "Figma", level: 60 },
-        { name: "Responsive Design", level: 85 },
-        { name: "Testing", level: 65 }
-      ]
-    }
-  ];
+const Skills = () => {
+  const { skillCategories } = personalData;
 
   return (
     <section id="skills" className="skills-section">
@@ -49,7 +21,7 @@ function Skills() {
                       <span className="skill-percentage">{skill.level}%</span>
                     </div>
                     <div className="skill-bar">
-                      <div 
+                      <div
                         className="skill-progress"
                         style={{ width: `${skill.level}%` }}
                       ></div>
@@ -63,7 +35,6 @@ function Skills() {
       </div>
     </section>
   );
-}
+};
 
 export default Skills;
-

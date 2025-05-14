@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import contactData from "../../data/contactData.json";
+import personalData from "../../data/personalData.json";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -30,7 +30,7 @@ function Contact() {
     alert("Thank you for your message! I will get back to you soon.");
   };
 
-  const { email, phone, location, socialLinks } = contactData;
+  const { email, phone, location, socialLinks } = personalData.contact;
 
   return (
     <section id="contact" className="contact-section">

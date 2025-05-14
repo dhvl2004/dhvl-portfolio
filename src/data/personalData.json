@@ -1,0 +1,101 @@
+{
+  "profile": {
+    "name": "Duong Hoang Vu Lam",
+    "profilePhotoLink": "/images/profile.JPG",
+    "socialLinks": [
+      { "platform": "GitHub", "url": "https://github.com/dhvl2004" },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/duong-hoang-vu-lam/"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Data Engineer & Analyst",
+    "description": "I build responsive, user-friendly websites and applications with modern technologies and clean, efficient code.",
+    "profileInitials": "DHVL"
+  },
+  "summary": "I am currently pursuing a Bachelor of Computing in Data Science and Artificial Intelligence at Nanyang Technological University, Singapore. I have a strong foundation in data analysis, machine learning, and software development. I am eager to apply my skills in real-world projects and contribute to innovative solutions.",
+  "experience": [
+    {
+      "title": "Data Intern",
+      "company": "Handshakes by DC Frontiers, Singapore",
+      "date": "May 2025 - Present",
+      "description": "..."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Computing in Data Science and Artificial Intelligence",
+      "institution": "Nanyang Technological University, Singapore",
+      "date": "August 2023 - Present",
+      "description": "..."
+    },
+    {
+      "degree": "Semester Exchange Program",
+      "institution": "University of Bologna, Italy",
+      "date": "September 2025 - February 2026",
+      "description": "..."
+    }
+  ],
+  "achievements": [
+    "Led a team of 5 developers to deliver a high-traffic e-commerce platform.",
+    "Reduced page load time by 60% through optimization techniques.",
+    "Implemented CI/CD pipeline that decreased deployment time by 70%.",
+    "Received 'Developer of the Year' award at Tech Solutions Inc."
+  ],
+  "skillCategories": [
+    {
+      "category": "Frontend",
+      "skills": [
+        { "name": "HTML", "level": 90 },
+        { "name": "CSS", "level": 85 },
+        { "name": "JavaScript", "level": 80 },
+        { "name": "React", "level": 85 },
+        { "name": "TypeScript", "level": 70 }
+      ]
+    },
+    {
+      "category": "Backend",
+      "skills": [
+        { "name": "Node.js", "level": 75 },
+        { "name": "Express", "level": 70 },
+        { "name": "MongoDB", "level": 65 },
+        { "name": "SQL", "level": 60 }
+      ]
+    },
+    {
+      "category": "Tools & Others",
+      "skills": [
+        { "name": "Git", "level": 80 },
+        { "name": "Figma", "level": 60 },
+        { "name": "Responsive Design", "level": 85 },
+        { "name": "Testing", "level": 65 }
+      ]
+    }
+  ],
+  "interests": ["Working Out", "Hiking", "Reading", "Travel", "Open Source"],
+  "resumeLink": "/downloads/DuongHoangVuLam_Resume.pdf",
+  "footer": {
+    "copyright": "© 2025 Duong Hoang Vu Lam",
+    "socialLinks": [
+      { "platform": "GitHub", "url": "https://github.com/dhvl2004" },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/duong-hoang-vu-lam/"
+      }
+    ]
+  },
+  "contact": {
+    "email": "lam.duonghoangvu.work@gmail.com",
+    "phone": "+65 ...",
+    "location": "Hanoi, Vietnam",
+    "socialLinks": [
+      { "platform": "GitHub", "url": "https://github.com/dhvl2004" },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/duong-hoang-vu-lam/"
+      }
+    ]
+  }
+}

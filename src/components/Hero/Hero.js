@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
-import heroData from "../../data/heroData.json";
+import personalData from "../../data/personalData.json";
 
 const Hero = () => {
   const [greeting, setGreeting] = useState("");
@@ -16,9 +16,8 @@ const Hero = () => {
 
     setGreeting(getGreeting());
   }, []);
-
-  const { name, title, description, socialLinks, cta, profileInitials } =
-    heroData;
+  const { name, socialLinks } = personalData.profile;
+  const { title, description, profileInitials } = personalData.hero;
 
   return (
     <section id="home" className="hero-section">
@@ -37,12 +36,11 @@ const Hero = () => {
             <h2 className="hero-subtitle">{title}</h2>
 
             <p className="hero-description">{description}</p>
-
             <div className="hero-cta">
-              <a href={cta.projects} className="btn btn-primary">
+              <a href="#projects" className="btn btn-primary">
                 View Projects
               </a>
-              <a href={cta.contact} className="btn btn-outline">
+              <a href="#contact" className="btn btn-outline">
                 Contact Me
               </a>
             </div>
@@ -62,7 +60,6 @@ const Hero = () => {
               ))}
             </div>
           </div>
-
           <div className="hero-image">
             <div className="profile-image-container">
               <div className="profile-image-placeholder">

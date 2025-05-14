@@ -1,39 +1,9 @@
 import React from "react";
 import "./Projects.css";
+import projectsData from "../../data/projectsData.json";
 
-function Projects() {
-  const projects = [
-    {
-      id: 1,
-      title: "Project One",
-      description:
-        "A brief description of project one. Explain what technologies you used and what problems you solved.",
-      image: "project1.jpg",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
-      github: "#",
-      live: "#",
-    },
-    {
-      id: 2,
-      title: "Project Two",
-      description:
-        "A brief description of project two. Explain what technologies you used and what problems you solved.",
-      image: "project2.jpg",
-      technologies: ["React", "Firebase", "Material UI"],
-      github: "#",
-      live: "#",
-    },
-    {
-      id: 3,
-      title: "Project Three",
-      description:
-        "A brief description of project three. Explain what technologies you used and what problems you solved.",
-      image: "project3.jpg",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      github: "#",
-      live: "#",
-    },
-  ];
+const Projects = () => {
+  const { projects } = projectsData;
 
   return (
     <section id="projects" className="projects-section">
@@ -80,6 +50,6 @@ function Projects() {
       </div>
     </section>
   );
-}
+};
 
 export default Projects;

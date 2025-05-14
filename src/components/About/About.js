@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import aboutData from "../../data/aboutData.json";
+import personalData from "../../data/personalData.json";
 
 const About = () => {
   const {
@@ -11,8 +11,7 @@ const About = () => {
     achievements,
     interests,
     resumeLink,
-    profilePhotoLink,
-  } = aboutData;
+  } = personalData;
 
   return (
     <section id="about" className="about-section">
@@ -26,7 +25,7 @@ const About = () => {
               <div className="about-image-border"></div>
               <div className="about-image-placeholder">
                 <img
-                  src={process.env.PUBLIC_URL + profilePhotoLink}
+                  src={process.env.PUBLIC_URL + profile.profilePhotoLink}
                   alt={profile.name}
                   className="about-image-img"
                 />
@@ -47,6 +46,7 @@ const About = () => {
               ))}
             </div>
           </div>
+
           {/* Profile Information */}
           <div className="about-info">
             {/* Professional Summary */}
